@@ -1,13 +1,11 @@
-/* VARIABLES DE COLOR */
 :root {
-    --color-primario: #002147;    /* Azul marino oscuro (Header/Nav) */
-    --color-secundario: #6f42c1;  /* Morado vibrante (Detalles/Hover) */
-    --color-fondo: #f4f7f9;       /* Gris azulado muy claro */
+    --color-primario: #003366;    /* Azul fuerte para el menú */
+    --color-secundario: #4A90E2;  /* Azul clarito para detalles */
+    --color-fondo: #E6F2FF;       /* Fondo de la web azul muy claro */
     --color-texto: #333333;
     --blanco: #ffffff;
 }
 
-/* ESTILOS GENERALES */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -15,29 +13,23 @@ body {
     padding: 0;
     background-color: var(--color-fondo);
     color: var(--color-texto);
+    /* Centrado de la estructura base */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* CABECERA (HEADER) */
 header {
     background-color: var(--color-primario);
     color: var(--blanco);
     padding: 40px 0;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.2em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-/* NAVEGACIÓN (MENÚ) */
 nav {
-    background-color: #001529; /* Azul más oscuro para el menú */
+    background-color: #002244;
     padding: 15px 0;
-    margin-top: 20px;
+    text-align: center;
 }
 
 nav a {
@@ -45,99 +37,42 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    margin: 0 5px;
-    transition: all 0.3s ease;
-    border-radius: 4px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: var(--color-secundario);
-    color: var(--blanco);
+    color: var(--color-secundario);
 }
 
-/* CONTENEDOR PRINCIPAL */
 .contenedor {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 40px auto;
     background: var(--blanco);
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    /* AQUÍ CENTRAMOS TODO EL CONTENIDO INTERNO */
+    text-align: center;
+    flex: 1;
 }
 
-/* SECCIONES Y TÍTULOS INTERNOS */
-h2 {
-    color: var(--color-primario);
-    border-bottom: 2px solid var(--color-secundario);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: var(--color-primario);
-    margin-top: 30px;
-}
-
-/* TABLAS (Plan de estudios) */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
+/* Para que las listas no se descoloquen al centrar */
+ul {
+    display: inline-block;
     text-align: left;
 }
 
-th {
-    background-color: #f8f9fa;
-    font-weight: bold;
-}
-
-tr:hover {
-    background-color: #f1f3f5;
-}
-
-/* IMÁGENES */
 img {
     display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
     margin: 20px auto;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    max-width: 100%;
 }
 
-/* BOTONES DE CURSO (Página Grado) */
-.curso-tag {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    margin-right: 10px;
-}
-
-/* TAGS DE COMPETENCIAS (Página Sobre mí) */
-.skill-tag {
-    background: #e9ecef;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.9em;
-    font-weight: bold;
-    color: var(--color-primario);
-    display: inline-block;
-    margin: 5px;
-}
-
-/* PIE DE PÁGINA */
 footer {
+    background-color: var(--color-primario);
+    color: white;
     text-align: center;
-    padding: 30px;
-    background-color: #222;
-    color: var(--blanco);
-    margin-top: 60px;
-    font-size: 0.9em;
+    padding: 20px 0;
+    margin-top: auto;
 }
