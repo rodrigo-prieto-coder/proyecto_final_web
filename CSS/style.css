@@ -1,78 +1,65 @@
-:root {
-    --color-primario: #003366;    /* Azul fuerte para el menú */
-    --color-secundario: #4A90E2;  /* Azul clarito para detalles */
-    --color-fondo: #E6F2FF;       /* Fondo de la web azul muy claro */
-    --color-texto: #333333;
-    --blanco: #ffffff;
-}
-
+/* Estilo nivel básico - Todo centrado */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #E6F2FF; /* Azul claro */
     margin: 0;
     padding: 0;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-    /* Centrado de la estructura base */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    text-align: center;
 }
 
 header {
-    background-color: var(--color-primario);
-    color: var(--blanco);
-    padding: 40px 0;
-    text-align: center;
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+    padding: 30px;
 }
 
 nav {
     background-color: #002244;
-    padding: 15px 0;
-    text-align: center;
+    padding: 10px;
 }
 
 nav a {
-    color: var(--blanco);
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: var(--color-secundario);
+    margin: 0 10px;
 }
 
 .contenedor {
-    max-width: 900px;
-    margin: 40px auto;
-    background: var(--blanco);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    /* AQUÍ CENTRAMOS TODO EL CONTENIDO INTERNO */
-    text-align: center;
-    flex: 1;
-}
-
-/* Para que las listas no se descoloquen al centrar */
-ul {
-    display: inline-block;
-    text-align: left;
-}
-
-img {
-    display: block;
+    background-color: white;
+    width: 80%;
     margin: 20px auto;
-    border-radius: 10px;
-    max-width: 100%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    display: inline-block; /* Para que el contenedor respete el centrado */
+    text-align: left; /* El texto dentro del cuadro blanco se lee normal */
+}
+
+.caja {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
 }
 
 footer {
-    background-color: var(--color-primario);
+    background-color: #003366;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.icono {
+    width: 40px;
+    margin: 10px;
 }
