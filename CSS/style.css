@@ -1,39 +1,87 @@
-/* Estilos generales para que la web se vea limpia */
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Fondo gris claro como el de las fotos */
+    background-color: #e9ecef; /* Un gris azulado más moderno */
+    color: #333;
 }
 
+/* Cabecera profesional */
 header {
-    background-color: #333;
+    background-color: #004085; /* Azul oscuro corporativo */
     color: white;
-    padding: 20px;
+    padding: 2rem 1rem;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Menú de navegación estilo botones */
 nav {
-    margin-top: 10px;
+    margin-top: 20px;
+    background: #003366;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin: 0 5px;
+    transition: background 0.3s;
 }
 
-.container {
-    background-color: white;
-    width: 80%;
+nav a:hover {
+    background-color: #0056b3; /* Efecto al pasar el ratón */
+    border-radius: 4px;
+}
+
+/* Contenedor principal (el bloque blanco) */
+.contenedor {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Estilo para las imágenes */
+img {
+    display: block;
     margin: 20px auto;
-    padding: 20px;
-    min-height: 400px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #fff;
 }
 
+/* Tablas como la de la página de Grado */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+/* Pie de página */
 footer {
     text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
+    padding: 20px;
+    background: #343a40;
+    color: white;
+    margin-top: 40px;
 }
