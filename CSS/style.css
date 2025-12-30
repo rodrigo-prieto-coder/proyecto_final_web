@@ -1,21 +1,25 @@
-/* Estilo nivel básico - Todo centrado */
+/* Estilo básico nivel principiante */
 body {
     font-family: Arial, sans-serif;
     background-color: #E6F2FF; /* Azul claro */
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #003366; /* Azul oscuro */
+    background-color: #003366;
     color: white;
-    padding: 30px;
+    padding: 20px;
+    text-align: center;
 }
 
 nav {
     background-color: #002244;
     padding: 10px;
+    text-align: center;
 }
 
 nav a {
@@ -30,8 +34,8 @@ nav a {
     margin: 20px auto;
     padding: 30px;
     border: 1px solid #ccc;
-    display: inline-block; /* Para que el contenedor respete el centrado */
-    text-align: left; /* El texto dentro del cuadro blanco se lee normal */
+    flex: 1; /* Esto empuja el footer hacia abajo */
+    text-align: center; /* Centra todo el contenido */
 }
 
 .caja {
@@ -39,24 +43,26 @@ nav a {
     border: 1px solid #ddd;
     padding: 15px;
     margin: 15px 0;
+    text-align: left; /* El texto dentro de cajas se lee mejor a la izquierda */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 10px;
-    text-align: center;
 }
 
 footer {
     background-color: #003366;
     color: white;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
 }
 
 .icono {
